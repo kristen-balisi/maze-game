@@ -20,9 +20,6 @@ import java.awt.event.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 public class Maze {
 
@@ -185,6 +182,7 @@ class MazeGame extends JPanel implements KeyListener {
         Scanner scanMap = new Scanner(System.in);
         System.out.println("Enter name of map file: ");
         String fileName = scanMap.nextLine();
+        
         File text = new File(fileName);
         Scanner scan = new Scanner(text);
 
@@ -200,6 +198,7 @@ class MazeGame extends JPanel implements KeyListener {
             }
             row++;
         }
+
         return mazeMap;
     }
 
@@ -211,10 +210,9 @@ class MazeGame extends JPanel implements KeyListener {
     }
 
     public Boolean playAgain() {
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("\nWould you like to play again (Y/N)? ");
         Scanner stringScanner = new Scanner(System.in);
-        String playAgain = userInput.nextLine();
+        System.out.println("\nWould you like to play again (Y/N)? ");
+        String playAgain = stringScanner.nextLine();
 
         return playAgain.toLowerCase().equals("y");
     }
