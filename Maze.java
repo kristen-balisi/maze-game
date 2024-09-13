@@ -1,7 +1,5 @@
-/* Name: Kristen Balisi   341426344
- * Date: 06/04/2023
- * Program Name: Maze Game
- * Program Description: This maze program features a 20x20 grid maze where the 
+/* Name: Maze Solver
+ * Description: This maze program features a 20x20 grid maze where the 
  * objective is for the player to navigate from the starting point to the exit. 
  * It offers two game modes: player-solve and computer-solve. In player mode, 
  * the user can navigate the maze manually using the keyboard arrow keys. In 
